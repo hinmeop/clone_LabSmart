@@ -1,0 +1,7 @@
+export { HeroSection } from './components/HeroSection'
+export { DomainSection } from './components/DomainSection'
+export { FeaturedProjectsSection } from './components/FeaturedProjectsSection'
+export { NewsSection } from './components/NewsSection'
+export { TeamSection } from './components/TeamSection'
+export { RecruitmentBanner } from './components/RecruitmentBanner'
+export { useHomeData } from './hooks/useHomeData'

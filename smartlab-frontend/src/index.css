@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ============================================================
+   Design tokens SmartLab (lấy từ mockup)
+   Dùng trong class Tailwind: bg-brand-600, text-ink-900, border-line...
+   ============================================================ */
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  /* Màu thương hiệu (xanh lab) */
+  --color-brand-50: #e6f0ed;
+  --color-brand-100: #dcebe6;
+  --color-brand-200: #d7ebe5;
+  --color-brand-300: #8fd1c1;
+  --color-brand-600: #0d5f52;
+  --color-brand-700: #08463c;
+  --color-brand-900: #0b2a24;
+
+  /* Chữ */
+  --color-ink-900: #15201d;
+  --color-ink-700: #3c4a46;
+  --color-ink-600: #4a5753;
+  --color-ink-500: #5c6a66;
+  --color-ink-300: #a9b4b0;
+  --color-ink-200: #c7d0cc;
+
+  /* Nền & đường viền */
+  --color-canvas: #f5f6f3;
+  --color-line: #e3e6e1;
+  --color-line-soft: #edf0ec;
+  --color-line-strong: #c9d0cb;
+  --color-line-dark: #2f3b37;
+
+  /* Tông pastel cho avatar / thumbnail */
+  --color-tone-mint: #dcebe6;
+  --color-tone-sand: #f1e7d6;
+  --color-tone-lavender: #e3e6f1;
+  --color-tone-rose: #ecdfe3;
+  --color-tone-leaf: #e1ecd9;
+  --color-tone-stone: #e8e3d8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-ink-900 antialiased;
+  }
+
+  input[type='checkbox'],
+  input[type='radio'] {
+    accent-color: var(--color-brand-600);
+  }
+}
